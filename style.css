@@ -1,0 +1,142 @@
+.box{
+ font-size: 40px;
+ color: aliceblue;
+ width: 180px;
+ height: 200px;
+ border: 5px solid rgb(121, 56, 121);
+ background-color: rgb(29, 56, 47);
+ transition: width 2s ease-in .3s;
+}
+.box:hover{
+    background-color: rgb(93, 212, 212);
+    width:1000px;
+    color: black;
+} 
+
+.bat{
+    transition: transform 0.5s ease-in-out;
+}
+.bat:hover{
+    transform: rotate(-35deg);
+    transform-origin: top;
+}
+.ball{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: tomato;
+    position: relative;
+    left: 945px;
+    top: -350px;
+    transition: transform 0.5s ease-in-out .3s;
+
+    .field:hover .ball{
+        transform: translate(900px, -500px);
+    }
+    .ball:hover{
+        transform: translate(900px, -500px);
+    }
+
+@keyframes slidein{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 700px;
+    }
+}
+
+    .stage{
+        background-color: lightgrey;
+        height: 200px;
+        min-height: 700px;
+
+    }
+    stage:hover .ball{
+        animation: slidein 5s ease-in-out 1s infinite alternate ;
+        
+    }
+
+    .ball{
+        height: 130px;
+        width: 130px;
+        background-color: rgb(201, 45, 240);
+        border-radius: 50%;
+        position: absolute;
+    } 
+    .parant{
+       display: flex; 
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+    }
+
+.box{
+    width: 300px;
+    height: 200px;
+    font-size: 40px;
+    border: 3px solid rgb(29, 175, 119);
+    border-radius: 5%;
+}
+.Gun{
+    margin-left: ;
+    flex: auto;
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+
+.clander ul{
+display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ grid-gap: 1em;
+}
+.clander li{
+    list-style: none;
+    font-size: 4em;
+    height: 125px;
+    border-radius: 10px;
+    background-color: rgba(47, 60, 170, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fast-month{
+    background-color: rgba(126, 146, 163, 0.527) !important;
+}
+.day{
+    background-color: rgba(95, 216, 176, 0.507) !important;
+}
+.box{
+    
+    border: 3px solid rgb(150, 211, 58);
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 0% auto;
+}
+.food{
+    border: 3px solid darkgray;
+    border-radius: 30px;
+    margin: 10px;
+    width: 350px;
+}
+.food img{
+    width: 100%;
+    border-top-right-radius: 27px;
+    border-top-left-radius: 27px;
+}
+@media (max-width:700px) {
+    .container .food {
+        background-color: antiquewhite;
+    }
+}
+@media (min-width:1500px) {
+    .container .food {
+        background-color: rgb(215, 250, 239);
+    }
+}
